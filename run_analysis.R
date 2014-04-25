@@ -1,4 +1,4 @@
-## library used during the analysis
+## libraries used during the analysis
 library(plyr)
 library(dplyr)
 library(reshape2)
