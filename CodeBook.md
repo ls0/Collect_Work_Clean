@@ -1,7 +1,7 @@
 ##Code Book for Samsung Smartphone Accelerometer Data
-####Six Activity levels: *Walking, Walking Up (stairs), Walking Down (stairs), Sitting, Standing, Laying*
+####Activity levels: *Walking, Walking Up (stairs), Walking Down (stairs), Sitting, Standing, Laying*
 ####Subject: 1-30, ages 19-48
-####Motion features: 561
+####Motion vectors: 561
 ####Motion directions: X, Y, Z
 ###Motion vectors:      
 * tBodyAcc-XYZ     
@@ -26,12 +26,12 @@
 
 ####Raw datafiles used:             
 * X_test.txt (set of test motion data for 9 subjects (30%))   
-* subject_test.txt (list of test "Subject"" that generated motion data)   
-* y_test.txt (list of test "Activity"" performed by subjects)   
+* subject_test.txt (list of test "Subject" that generated motion data)   
+* y_test.txt (list of test "Activity" performed by subjects)   
 * X_train.txt (set of training motion data for 21 subjects (70%))   
-* subject_train.txt (list of training "Subject"" that generated motion data)   
-* y_train.txt (list of training "Activity"" performed by subjects)   
-* features.txt (561 motion features for both test and training sets)              
+* subject_train.txt (list of training "Subject" that generated motion data)   
+* y_train.txt (list of training "Activity" performed by subjects)   
+* features.txt (561 motion vector features for both test and training sets)              
 
 ####Other informational files that were used:        
 * README.txt and features_info.txt, which are the source of information in this code book (2).         
