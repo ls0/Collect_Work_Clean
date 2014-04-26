@@ -68,7 +68,7 @@ names(xTest) <- paste0(names1)
 Unlist the activity and coerce into numeric.  Activity levels are changed to descriptive activity names. 
 ```{r}
 activityTest1 <- as.numeric(unlist(activityTest))
-Activity <- recode(activityTest1, "c(1) = 'Walking'; c(2) = 'Walking Up'; c(3) = 'Walking Down'; c(4) = 'Sitting'; c(5) = 'Standing'; c(6) = 'Laying'")
+Activity <- recode(activityTest1, "c(1) = 'Walking'; c(2) = 'WalkingUp'; c(3) = 'WalkingDown'; c(4) = 'Sitting'; c(5) = 'Standing'; c(6) = 'Laying'")
 ```
 Add "Activity" to left side of data table.
 ```{r}
@@ -109,7 +109,7 @@ names(xTrain) <- paste0(names1)
 Unlist the activity and coerce into numeric.  Activity levels are changed to descriptive activity names.
 ```{r}
 activityTrain1 <- as.numeric(unlist(activityTrain))
-Activity <- recode(activityTrain1, "c(1) = 'Walking'; c(2) = 'Walking Up'; c(3) = 'Walking Down'; c(4) = 'Sitting'; c(5) = 'Standing'; c(6) = 'Laying'")
+Activity <- recode(activityTrain1, "c(1) = 'Walking'; c(2) = 'WalkingUp'; c(3) = 'WalkingDown'; c(4) = 'Sitting'; c(5) = 'Standing'; c(6) = 'Laying'")
 ```
 Add "Activity" to left side of data table.
 ```{r}
