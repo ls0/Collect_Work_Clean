@@ -22,7 +22,7 @@ names(xTest) <- paste0(names1)
 
 ## unlist the activity, coerce into numeric, 
 activityTest1 <- as.numeric(unlist(activityTest))
-Activity <- recode(activityTest1, "c(1) = 'Walking'; c(2) = 'Walking Up'; c(3) = 'Walking Down'; c(4) = 'Sitting'; c(5) = 'Standing'; c(6) = 'Laying'")
+Activity <- recode(activityTest1, "c(1) = 'Walking'; c(2) = 'WalkingUp'; c(3) = 'WalkingDown'; c(4) = 'Sitting'; c(5) = 'Standing'; c(6) = 'Laying'")
 
 ## bind "Activity" to left side of data table
 dataFrame <- cbind(Activity, xTest)
@@ -53,7 +53,7 @@ names(xTrain) <- paste0(names1)
 
 ## returns activity levels
 activityTrain1 <- as.numeric(unlist(activityTrain))
-Activity <- recode(activityTrain1, "c(1) = 'Walking'; c(2) = 'Walking Up'; c(3) = 'Walking Down'; c(4) = 'Sitting'; c(5) = 'Standing'; c(6) = 'Laying'")
+Activity <- recode(activityTrain1, "c(1) = 'Walking'; c(2) = 'WalkingUp'; c(3) = 'WalkingDown'; c(4) = 'Sitting'; c(5) = 'Standing'; c(6) = 'Laying'")
 
 ## binds activity group to left side of data table
 dataFrame <- cbind(Activity, xTrain)
