@@ -1,5 +1,5 @@
 ##Code Book for Samsung Smartphone Accelerometer Data 
-####Activity levels: *Walking, Walking Up (stairs), Walking Down (stairs), Sitting, Standing, Laying [1, 2]*
+####Activity levels: *Walking, WalkingUp (stairs), WalkingDown (stairs), Sitting, Standing, Laying [1, 2]*
 ####Subject: 1-30, ages 19-48
 ####Motion vectors: 561
 ####Motion directions: X, Y, Z
