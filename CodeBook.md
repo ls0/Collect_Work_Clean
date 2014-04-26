@@ -1,4 +1,4 @@
-##Code Book for Samsung Accelerometer Data
+##Code Book for Samsung Smartphone Accelerometer Data
 ####Six Activity levels: *Walking, Walking Up (stairs), Walking Down (stairs), Sitting, Standing, Laying*
 ####Subject: 1-30, ages 19-48
 ####Motion features: 561
