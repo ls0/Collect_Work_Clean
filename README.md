@@ -35,7 +35,7 @@ Project requirements as [written](https://class.coursera.org/getdata-002/human_g
 5.  Creates a second, independent tidy data set with the average of each variable for each activity and each subject.   
 ### R-script Function and Usage
 ##Data       
-Data was obtained from the following site: <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> 
+Data was obtained from: <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> 
 The zip file was downloaded, unzipped and saved to the R working directory.  
 #####Libraries used during the analysis.
 ```{r}
@@ -61,7 +61,7 @@ Returns column names and selects row 2 with column names only.
 ```{r}
 names1 <- names[2,]
 ```
-Returns new test data frame with proper names.
+Returns new test data frame with 561 motion vectors.
 ```{r}
 names(xTest) <- paste0(names1)
 ```
@@ -82,7 +82,7 @@ Returns the complete test table with subject numbers added to the furthest most 
 ```{r}
 dataFrameTest <- cbind(subjectTest1, dataFrame)
 ```
-Save tidy dataFrameTest to R directory
+Save tidy dataFrameTest to R directory.
 ```{r}
 write.table(dataFrameTest, file = "dataFrameTest.txt")
 ```
@@ -102,11 +102,9 @@ Returns column names and selects row 2 with names only.
 ```{r}
 names1 <- names[2,]
 ```
-Returns new training data frame with correct motion vector names.
+Returns new training data frame with 561 motion vectors.
 ```{r}
 names(xTrain) <- paste0(names1)
-head(xTrain, 2)
-dim(xTrain)
 ```
 Unlist the activity and coerce into numeric.  Activity levels are changed to descriptive activity names.
 ```{r}
